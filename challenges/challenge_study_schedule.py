@@ -9,7 +9,7 @@ def study_schedule(permanence_period, target_time):
         if not isinstance(clock_in, int) or not isinstance(clock_out, int):
             return None
 
-        if int(clock_in) <= target_time and int(clock_out) >= target_time:
+        if clock_in <= target_time and clock_out >= target_time:
             counter += 1
 
     return counter
